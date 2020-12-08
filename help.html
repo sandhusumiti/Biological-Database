@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Search database</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="ihttps://bioed.bu.edu/students_20/groupH/indexdata.html">Gene expression in <span class="logo_colour">REELER mice brains</span></a></h1>
+
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="https://bioed.bu.edu/students_20/groupH/indexdata.html">Home</a></li>
+
+          <li><a href="https://bioed.bu.edu/cgi-bin/students_20/groupH/about.py">About</a></li>
+
+          <li class="selected"><a href="https://bioed.bu.edu/students_20/groupH/help.html">Help</a></li>
+
+          <li><a href="https://bioed.bu.edu/cgi-bin/students_20/groupH/search.py">Search</a></li>
+
+          <li><a href="https://bioed.bu.edu/students_20/groupH/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h1>Latest News</h1>
+        <h4>New Website Launched</h4>
+        <h5>April 27, 2010</h5>
+        <p> Take a look around and let us know what you think.<br /></p>
+        <h1>Useful Database Links</h1>
+        <ul>
+          <li><a href="https://www.thermofisher.com/us/en/home/life-science/microarray-analysis/affymetrix.html">Affymatrix</a></li>
+          <li><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></li>
+          <li><a href="http://geneontology.org/">GeneOntology</a></li>
+          <li><a href="https://www.genome.jp/kegg/pathway.html">KEGG Pathway</a></li>
+        </ul>
+
+      </div>
+          <h1> INTRODUCTION </h1>
+      <hr>
+      <hr>
+         <p>
+          During brain development proper neuronal migration is essential. Reelin is an extracellular matrix molecule which binds to two cell surface receptors known as apoER2 and VLDLR. Reelin mediates signals to the interior of cells by binding to these receptors.  Intracellular propagation of the signal from the receptors is mediated by an intracellular adaptor protein called Dab1. When either Reelin, Dab1, or both receptors are knocked out in mice, a severe neuronal migration phenotype develops. To better understand the molecular mechanism in the brains of these mutant mice, RNA from cortical brain regions of the three different Reeler phenotype mutants was analyzed using Affymetrix Mouse 430-2 gene chips. The objective of the database is to present data about each individual mutant and also overlapping data from the three Reeler mutants.
+          </p>
+
+      <hr>
+
+        <h1> DEFINITION and KEYs</h1>
+
+      <hr>
+      <hr>
+  
+      <b>Gene symbol:</b>
+      This is the short name of your gene of interest.										</br></br>
+      short name = Xpo7																		</br>
+      long name = exportin 7																</br> </br>
+      
+      <hr>
+
+     </br>
+     <b>Fold Change:</b>
+      This is the ratio of the variant signal compared to the wt signal.					</br> </br>
+      Search by a fold change of at least 1.5 for significant results.						</br>
+      To search by negative fold change see "Change Direction".								</br> </br>
+      <hr>
+
+      </br>
+      <b>Signal:</b>
+      A signal is high or "intense" if the gene you are targeting is prevalent. 			</br> </br>
+      The data is negligible if the signal is below 100.									</br> </br>
+
+      <hr>
+
+      </br>
+      <b>Detection:</b>																		</br> </br>
+      P = Prevalent																			</br>
+      A = Absent																					</br>
+      M = Marginal																			</br> </br>
+      <hr>
+
+      </br>
+      <b>Change Direction:</b>																</br> </br>
+      NC = No Change																		</br>
+      I = Increased			- select this to see a positive fold change						</br>
+      D = Decreased			- select this to see a negative fold change						</br> </br>
+      <hr>
+
+      </br>
+      <b id="variants">VARINATS:</b>                                                               </br> </br>
+      There are 6 variants to choose from:                                                  </br>
+      <b>VLDLR (Very low-density lipoprotein receptor):</b> </br>
+      <p>
+        It binds VLDL and transports it into cells by endocytosis. Its binding to Reelin induces tyrosine phosphorylation of Dab1 and also modulation of Tau phosphorylation.
+      </p></br>
+
+      <b>ApoER2 (Low-density lipoprotein receptor-related protein 8): </b> </br>
+      <p>
+        It is a cell surface receptor for Reelin (RELN) and apolipoprotein E (apoE)-containing ligands and participates in transmitting the extracellular Reelin signal to intracellular signaling processes, by binding to DAB1 on its cytoplasmic tail. 
+      </p></br>
+
+      <b>Dabl (Disabled homolog 1):   </b> </br>
+      <p>
+        It is an adapter molecule functioning in neural development and may regulate SIAH1 activity.  
+      </p></br>
+
+      <b>ApoE_VLDLR:  </b> </br>
+      <p>
+        Apoer2 is critical for normal neuronal positioning within the neocortex and hippocampus and, along side the VLDLR, for the development of the cerebellum.  
+      </p></br>
+
+      <b>Reln (Reelin): </b> </br>
+      <p>
+        It is an extracellular matrix serine protease and regulates microtubule function in neurons and neuronal migration. It also affects migration of sympathetic preganglionic neurons in the spinal cord. On binding to the extracellular domains of lipoprotein receptors VLDLR and LRP8/APOER2, it induces tyrosine phosphorylation of DAB1 and modulation of TAU phosphorylation.  
+      </p></br>
+
+      <hr>
+      <hr>
+      <h1>SEARCH FUNCTION (USE CASE)</h1>
+
+
+      <hr>
+      <hr>
+      <h1> RERERENCES </h1>
+      <hr>
+      <hr>
+      <p>
+        1. Howell, Brian W., Frank B. Gertler, and Jonathan A. Cooper. "Mouse disabled (mDab1): a Src binding protein implicated in neuronal development." The EMBO journal 16.1 (1997): 121-132.
+      </p> </br>
+
+      <p>
+        2. Beffert, Uwe, et al. "Modulation of synaptic plasticity and memory by Reelin involves differential splicing of the lipoprotein receptor Apoer2." Neuron 47.4 (2005): 567-579.
+      </p> </br>
+
+      <p>
+        3. Yip, Joseph W., et al. "Reelin controls position of autonomic neurons in the spinal cord." Proceedings of the National Academy of Sciences 97.15 (2000): 8612-8616.
+      </p> </br>
+
+
+
+      </br> </br>
+
+      </br>
+
+
+
+
+
+
+
+      </p>
+    </div>
+        </head>
+  </div>
+    </body>
+</html>

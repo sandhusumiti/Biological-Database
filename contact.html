@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Search database</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="https://bioed.bu.edu/students_20/groupH/style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="ihttps://bioed.bu.edu/students_20/groupH/indexdata.html">Gene expression in <span class="logo_colour">REELER mice brains</span></a></h1>
+          
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="https://bioed.bu.edu/students_20/groupH/indexdata.html">Home</a></li>
+
+          <li><a href="https://bioed.bu.edu/cgi-bin/students_20/groupH/about.py">About</a></li>
+
+          <li><a href="https://bioed.bu.edu/students_20/groupH/help.html">Help</a></li>
+
+          <li><a href="https://bioed.bu.edu/cgi-bin/students_20/groupH/search.py">Search</a></li>
+          <li><a href="https://bioed.bu.edu/cgi-bin/students_20/groupH/pathway.py">Pathway</a></li>
+
+          <li class="selected"><a href="https://bioed.bu.edu/students_20/groupH/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h1>Latest News</h1>
+        <h4>New Website Launched</h4>
+        <h5>April 27, 2020</h5>
+        <p> Take a look around and let us know what you think.<br /></p>
+        <h1>Useful Database Links</h1>
+        <ul>
+          <li><a href="https://www.thermofisher.com/us/en/home/life-science/microarray-analysis/affymetrix.html" target="_blank">Affymatrix</a></li>
+          <li><a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a></li>
+          <li><a href="http://geneontology.org/" target="_blank">GeneOntology</a></li>
+          <li><a href="https://www.genome.jp/kegg/pathway.html" target="_blank">KEGG Pathway</a></li>
+        </ul>
+        
+      </div>
+      <div id="content">
+        <h1>Contact Us</h1>
+        
+        <form   enctype="text/plain" accept-charset="utf-8">
+           
+          <input id="nameText" type="text" name="Name"  value size="60" placeholder="Name" required>  
+          
+          <input id="emailText" type="email" name="Email"  value size="60" placeholder="Email" required>
+          
+          <input id="telText"type="tel" name="Phone"  value size="60" aria-invalid="false" placeholder="Phone" required>
+
+          <input  id="subText" type="text" name="Subject"  value size="60" aria-invalid="false" placeholder="Subject" required>
+          <div style='text-align:left;'>
+          <textarea id="bodyText" name="your-message" cols="40" rows="10"  aria-required="true" aria-invalid="false" placeholder="Your Message" required></textarea>
+          </div>
+          <div>
+              <input type="button" value="Send Message" onclick="submitHandler();">
+              <a id="mailTo"></a>
+          </div>
+      </form>
+      <script>
+           
+        var initSubject='',initBody='';
+     
+        
+        function submitHandler(){
+            var to = "wyueh@bu.edu";
+            var name = nameText.value;
+            var email = emailText.value;
+            var tel = telText.value;
+            var subject = subText.value;
+    
+            var body = ""+bodyText.value+'%0A%0A%0A';
+                body += "From:"+nameText.value+'%0A';
+                body += "Email:"+emailText.value+'%0A';
+                body += "Tel:"+telText.value;
+    
+            mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body;
+            mailTo.click();
+        }
+   
+        function init(){
+            subText.value=initSubject;
+            toText.value=initTo;
+            bodyText.value=initBody;
+        }
+    </script>
+
+      
+      </div>
+    </div>
+    
+  </div>
+  <footer>
+      <p>2020 © BF-768@Boston University, All Rights Reserved.</p>
+  </footer>
+  <style>
+
+      footer{
+      padding: 10px 20px;
+      background: #0D0301;
+      color: white;
+      }
+
+  </style>
+</body>
+</html>
